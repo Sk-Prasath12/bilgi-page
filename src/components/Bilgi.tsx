@@ -1,4 +1,9 @@
 import "../App.css";import { IoDocumentOutline } from "react-icons/io5";
+import "../App.css";import { IoIosStarOutline } from "react-icons/io";
+import "../App.css";import { LuCrown } from "react-icons/lu";
+import "../App.css";import { FaFigma } from "react-icons/fa";
+import "../App.css";import { PiChartBar } from "react-icons/pi";
+import "../App.css";import { PiChartPieThin } from "react-icons/pi";
 
 const Bilgi = () => {
     return (
@@ -69,28 +74,28 @@ const Bilgi = () => {
                             <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                         </div>
                         <div>
-                            <IoDocumentOutline />
-                            <h3 className="title">Döküman Analizi</h3>
+                            <IoIosStarOutline />
+                            <h3 className="title">Kabul ve Değerlendirme</h3>
                             <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                         </div>
                         <div>
-                            <IoDocumentOutline />
-                            <h3 className="title">Döküman Analizi</h3>
+                            <LuCrown/>
+                            <h3 className="title">İş Kuralları Analizi</h3>
                             <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                         </div>
                         <div>
-                            <IoDocumentOutline />
-                            <h3 className="title">Döküman Analizi</h3>
+                            <PiChartBar />
+                            <h3 className="title">Akış Diyagramları</h3>
                             <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                         </div>
                         <div>
-                            <IoDocumentOutline />
-                            <h3 className="title">Döküman Analizi</h3>
+                            <PiChartPieThin />
+                            <h3 className="title">Paydaş Analizi</h3>
                             <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                         </div>
                         <div>
-                            <IoDocumentOutline />
-                            <h3 className="title">Döküman Analizi</h3>
+                            <FaFigma/>
+                            <h3 className="title">Prototipleme</h3>
                             <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                         </div>
                     </div>
