@@ -73,10 +73,26 @@ const Bilgi = () => {
                             <h3 className="title">Döküman Analizi</h3>
                             <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                         </div>
-                        <div>usjs</div>
-                        <div>slssd</div>
-                        <div>sfsis</div>
-                        <div>sfsis</div>
+                        <div>
+                            <IoDocumentOutline />
+                            <h3 className="title">Döküman Analizi</h3>
+                            <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                        </div>
+                        <div>
+                            <IoDocumentOutline />
+                            <h3 className="title">Döküman Analizi</h3>
+                            <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                        </div>
+                        <div>
+                            <IoDocumentOutline />
+                            <h3 className="title">Döküman Analizi</h3>
+                            <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                        </div>
+                        <div>
+                            <IoDocumentOutline />
+                            <h3 className="title">Döküman Analizi</h3>
+                            <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                        </div>
                     </div>
                 </div>
             </section>
