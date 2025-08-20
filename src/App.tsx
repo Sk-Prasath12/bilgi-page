@@ -3,7 +3,6 @@ import Bilgi from "./components/Bilgi";
 
 
 
-
 function App() {
 
   return (
@@ -14,3 +13,6 @@ function App() {
 }
 
 export default App
+
+
+
