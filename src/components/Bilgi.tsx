@@ -143,7 +143,7 @@ const Bilgi = () => {
                         <div className="text-center p-6 bg-white rounded-lg ">
                             <PiChartPieThin className="text-4xl text-blue-600 mb-4" />
                             <h3 className="text-lg font-bold mb-2">Paydaş Analizi</h3>
-                            <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                            <p className="text-gray-500 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                         </div>
 
                         <div className="text-center p-6 bg-white rounded-lg ">
