@@ -116,37 +116,37 @@ const Bilgi = () => {
 
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div className="text-center p-6 bg-white rounded-lg shadow-md">
+                        <div className="text-center p-6 bg-white rounded-lg ">
                             <IoDocumentOutline className="text-4xl text-blue-600 mb-4" />
                             <h3 className="text-lg font-bold mb-2">Döküman Analizi</h3>
                             <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                         </div>
 
-                        <div className="text-center p-6 bg-white rounded-lg shadow-md">
+                        <div className="text-center p-6 bg-white rounded-lg ">
                             <IoIosStarOutline className="text-4xl text-blue-600 mb-4" />
                             <h3 className="text-lg font-bold mb-2">Kabul ve Değerlendirme</h3>
                             <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                         </div>
 
-                        <div className="text-center p-6 bg-white rounded-lg shadow-md">
+                        <div className="text-center p-6 bg-white rounded-lg ">
                             <LuCrown className="text-4xl text-blue-600 mb-4" />
                             <h3 className="text-lg font-bold mb-2">İş Kuralları Analizi</h3>
                             <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                         </div>
 
-                        <div className="text-center p-6 bg-white rounded-lg shadow-md">
+                        <div className="text-center p-6 bg-white rounded-lg ">
                             <PiChartBar className="text-4xl text-blue-600 mb-4" />
                             <h3 className="text-lg font-bold mb-2">Akış Diyagramları</h3>
                             <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                         </div>
 
-                        <div className="text-center p-6 bg-white rounded-lg shadow-md">
+                        <div className="text-center p-6 bg-white rounded-lg ">
                             <PiChartPieThin className="text-4xl text-blue-600 mb-4" />
                             <h3 className="text-lg font-bold mb-2">Paydaş Analizi</h3>
                             <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                         </div>
 
-                        <div className="text-center p-6 bg-white rounded-lg shadow-md">
+                        <div className="text-center p-6 bg-white rounded-lg ">
                             <FaFigma className="text-4xl text-blue-600 mb-4" />
                             <h3 className="text-lg font-bold mb-2">Prototipleme</h3>
                             <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
