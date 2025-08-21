@@ -39,7 +39,7 @@ const Bilgi = () => {
         <>
             <header className="header bg-gray-900 text-black">
                 <nav className="flex justify-between items-center px-8 md:px-20 py-10 relative">
-                    <div className="nav text-xl font-bold px-9">
+                    <div className="text-xl font-bold px-9">
 
                         {/* Desktop Menu */}
                         <ul className="hidden md:flex space-x-8 font-medium">
