@@ -12,17 +12,17 @@ import { LuUsers } from "react-icons/lu";
 
 
 // Replace with actual image imports or URLs
-const logos = [
-    { src: "/img/borusan.png", alt: "BORUSAN" },
-    { src: "/img/istanbul.png", alt: "İstanbul Bilgi Üniversitesi" },
-    { src: "/img/book my show.png", alt: "bookmyshow" },
-    { src: "/img/akbank.png", alt: "AKBANK" },
-    { src: "/img/aktas.png", alt: "aktaş" },
-    { src: "/img/amazon.png", alt: "amazon" },
-    { src: "/img/akcan.png", alt: "AKÇANSA" },
-    { src: "/img/ola.png", alt: "OLA" },
-    { src: "/img/ola.png", alt: "Tümünü Gör->" },
-];
+// const logos = [
+//     { src: "/img/borusan.png", alt: "BORUSAN" },
+//     { src: "/img/istanbul.png", alt: "İstanbul Bilgi Üniversitesi" },
+//     { src: "/img/book my show.png", alt: "bookmyshow" },
+//     { src: "/img/akbank.png", alt: "AKBANK" },
+//     { src: "/img/aktas.png", alt: "aktaş" },
+//     { src: "/img/amazon.png", alt: "amazon" },
+//     { src: "/img/akcan.png", alt: "AKÇANSA" },
+//     { src: "/img/ola.png", alt: "OLA" },
+//     { src: "/img/ola.png", alt: "Tümünü Gör->" },
+// ];
 import { CiLinkedin } from "react-icons/ci";
 import { TiSocialFlickr } from "react-icons/ti";
 import { FiTwitter } from "react-icons/fi";
@@ -40,7 +40,6 @@ const Bilgi = () => {
             <header className="header bg-gray-900 text-black">
                 <nav className="flex justify-between items-center px-8 md:px-20 py-10 relative">
                     <div className="nav text-xl font-bold px-9">
-
                         {/* Desktop Menu */}
                         <ul className="hidden md:flex space-x-8 font-medium">
                             <li className="hover:text-red-300 cursor-pointer">Çözümler ve Hizmetler</li>
@@ -52,7 +51,7 @@ const Bilgi = () => {
                     </div>
 
                     {/* Contact Button */}
-                    <button className="hidden md:block bg-red-500 px-5 py-2 rounded-md hover:bg-red-600">
+                    <button className="hidden md:block bg-red-500 px-5 py-2 rounded-md hover:bg-red-600 text-white">
                         İletişim
                     </button>
 
@@ -63,17 +62,17 @@ const Bilgi = () => {
 
                     {/* Mobile Menu */}
                     <div
-                        className={`absolute top-0 left-0 w-full bg-red-500 transition-transform duration-300 ease-in-out${menuOpen ? 'translate-y-0' : '-translate-y-full'
+                        className={`absolute top-0 left-0 w-full h-screen bg-red-500 flex flex-col items-center justify-center space-y-8 text-white text-lg font-medium transform transition-transform duration-300 ease-in-out ${menuOpen ? "translate-y-0" : "-translate-y-full"
                             } md:hidden`}
                     >
-                        <ul className="items-center font-medium">
-                            <li>Çözümler ve Hizmetler</li>
-                            <li>Ürünler</li>
-                            <li>Teknolojiler</li>
-                            <li>İnsan Kaynakları</li>
-                            <li>Kurumsal</li>
+                        <ul className="flex flex-col items-center space-y-6">
+                            <li className="hover:text-black cursor-pointer">Çözümler ve Hizmetler</li>
+                            <li className="hover:text-black cursor-pointer">Ürünler</li>
+                            <li className="hover:text-black cursor-pointer">Teknolojiler</li>
+                            <li className="hover:text-black cursor-pointer">İnsan Kaynakları</li>
+                            <li className="hover:text-black cursor-pointer">Kurumsal</li>
                             <li>
-                                <button className="bg-black text-red-600 px-5 py-6 rounded-md">
+                                <button className="bg-black text-red-500 px-6 py-3 rounded-md">
                                     İletişim
                                 </button>
                             </li>
@@ -81,25 +80,14 @@ const Bilgi = () => {
                     </div>
                 </nav>
 
-                {/* Hero Section */}
+                /* Hero Section */
                 <div className="grid md:grid-cols-2 gap-10 items-center max-w-7xl mx-auto px-10 py-20">
                     <div className="ml-[-115px] text-left mt-[-180px]">
-                        <h1 className="text-3xl md:text-5xl font-bold mb-6">
-                            Bilgi Teknolojilerinde <br /> 23 Yıllık Tecrübe
-                        </h1>
-                        <p className="text-black mb-6">
-                            Müşterilerimizin yüksek seviye rekabet koşullarını yenilikçi çözümler ile
-                            karşılamaları için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla
-                            Proje Yönetimi, İş Analizi ve Test hizmeti sunmaktayız.
-                        </p>
+                        <h1 className="text-3xl md:text-5xl font-bold mb-6"> Bilgi Teknolojilerinde <br /> 23 Yıllık Tecrübe </h1>
+                        <p className="text-black mb-6"> Müşterilerimizin yüksek seviye rekabet koşullarını yenilikçi çözümler ile karşılamaları için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test hizmeti sunmaktayız. </p>
                         <div className="flex items-center space-x-4">
-                            <input
-                                type="text"
-                                placeholder="Mail adresinizi yazınız"
-                                className="border border-gray-300 text-black rounded-md px-4 py-2 w-64 focus:outline-none"
-                            />
-                            <button className="bg-red-500 text-white px-6 py-2 rounded-md hover:bg-red-600">
-                                Kayıt Ol
+                            <input type="text" placeholder="Mail adresinizi yazınız" className="border border-gray-300 text-black rounded-md px-4 py-2 w-64 focus:outline-none" />
+                            <button className="bg-red-500 text-white px-6 py-2 rounded-md hover:bg-red-600"> Kayıt Ol
                             </button>
                         </div>
                     </div>
@@ -107,53 +95,9 @@ const Bilgi = () => {
             </header>
             <section>
                 <div className="max-w-7xl mx-auto px-10 py-20">
-                    <div className="second">
-                        <h2 className="text-2xl font-bold mb-6">Kalite ve Süreç Yönetimi</h2>
-                        <p className="text-gray-600 mb-6">
-                            Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.
-                        </p>
-                    </div>
+                    <div className="second"> <h2 className="text-2xl font-bold mb-6">Kalite ve Süreç Yönetimi</h2>
+                        <p className="text-gray-600 mb-6"> Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız. </p> </div> <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8"> <div className="text-center p-6 bg-white rounded-lg"> <div className="relative flex items-center justify-center mb-6"> {/* Background Circle */} <div className="absolute right-[35%] w-8 h-8 rounded-full bg-dark bg-pink-500" /> {/* Icon in Front */} <IoDocumentOutline className="text-3xl text-black relative z-10" /> </div> <h3 className="text-lg font-bold mb-2 ">Döküman Analizi</h3> <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p> </div> <div className="text-center p-6 bg-white rounded-lg "> <div className="relative flex items-center justify-center mb-6"> {/* Background Circle */} <div className="absolute right-[49%] w-8 h-8 rounded-full bg-violet-400" /> {/* Icon in Front */} <IoIosStarOutline className="text-3xl text-black relative z-10" /> </div> <h3 className="text-lg font-bold mb-2">Kabul ve Değerlendirme</h3> <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p> </div> <div className="text-center p-6 bg-white rounded-lg "> <div className="relative flex items-center justify-center mb-6"> {/* Background Circle */} <div className="absolute right-[35%] w-8 h-8 rounded-full bg-sky-400" /> {/* Icon in Front */} <LuCrown className="text-3xl text-black relative z-10" /> </div> <h3 className="text-lg font-bold mb-2">İş Kuralları Analizi</h3> <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p> </div> <div className="text-center p-6 bg-white rounded-lg "> <div className="relative flex items-center justify-center mb-6"> {/* Background Circle */} <div className="absolute right-[48%] w-8 h-8 rounded-full bg-blue-400" /> {/* Icon in Front */} <PiChartBar className="text-3xl text-black relative z-10" /> </div> <h3 className="text-lg font-bold mb-2">Akış Diyagramları</h3> <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p> </div> <div className="text-center p-6 bg-white rounded-lg "> <div className="relative flex items-center justify-center mb-6"> {/* Background Circle */} <div className="absolute right-[35%] w-8 h-8 rounded-full bg-dark bg-red-500" /> {/* Icon in Front */} <PiChartPieThin className="text-3xl text-black relative z-10" /> </div> <h3 className="text-lg font-bold mb-2">Paydaş Analizi</h3> <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p> </div> <div className="text-center p-6 bg-white rounded-lg "> <div className="relative flex items-center justify-center mb-6"> {/* Background Circle */} <div className="absolute right-[35%] w-8 h-8 rounded-full bg-yellow-400" /> {/* Icon in Front */} <FaFigma className="text-3xl text-black relative z-10" /> </div> <h3 className="text-lg font-bold mb-2">Prototipleme</h3> <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p> </div> </div> </div> </section>
 
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div className="text-center p-6 bg-white rounded-lg ">
-                            <IoDocumentOutline className="text-4xl text-blue-600 mb-4" />
-                            <h3 className="text-lg font-bold mb-2">Döküman Analizi</h3>
-                            <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
-                        </div>
-
-                        <div className="text-center p-6 bg-white rounded-lg ">
-                            <IoIosStarOutline className="text-4xl text-blue-600 mb-4" />
-                            <h3 className="text-lg font-bold mb-2">Kabul ve Değerlendirme</h3>
-                            <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
-                        </div>
-
-                        <div className="text-center p-6 bg-white rounded-lg ">
-                            <LuCrown className="text-4xl text-blue-600 mb-4" />
-                            <h3 className="text-lg font-bold mb-2">İş Kuralları Analizi</h3>
-                            <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
-                        </div>
-
-                        <div className="text-center p-6 bg-white rounded-lg ">
-                            <PiChartBar className="text-4xl text-blue-600 mb-4" />
-                            <h3 className="text-lg font-bold mb-2">Akış Diyagramları</h3>
-                            <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
-                        </div>
-
-                        <div className="text-center p-6 bg-white rounded-lg ">
-                            <PiChartPieThin className="text-4xl text-blue-600 mb-4" />
-                            <h3 className="text-lg font-bold mb-2">Paydaş Analizi</h3>
-                            <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
-                        </div>
-
-                        <div className="text-center p-6 bg-white rounded-lg ">
-                            <FaFigma className="text-4xl text-blue-600 mb-4" />
-                            <h3 className="text-lg font-bold mb-2">Prototipleme</h3>
-                            <p className="text-gray-600 text-sm">Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section className="test-management">
                 <div className="test-management__content">
                     <h2>Test Yönetimiyle Neler Sağlıyoruz?</h2>
@@ -211,28 +155,86 @@ const Bilgi = () => {
                 </section>
             </div>
 
-            <section className="references">
-                <h2>Referanslarımız</h2>
-                <p>Bize güvenen ve beraber çalıştığımız iş ortaklarımız</p>
-                <div className="logo-grid">
-                    {logos.map((logo, index) => (
-                        <img key={index} src={logo.src} alt={logo.alt} className="logo" />
-                    ))}
+            <section className="references py-10">
+                <h2 className="text-2xl font-bold text-center mb-4">Referanslarımız</h2>
+                <p className="text-center mb-8">
+                    Bize güvenen ve beraber çalıştığımız iş ortaklarımız
+                </p>
+
+                <div className="flex flex-row gap-6 place-items-center px-40">
+                    {/* BORUSAN */}
+                    <div>
+                        <div className="bg-white shadow-md rounded-lg flex items-center justify-center p-4 w-40 h-24">
+                            <img src="/img/borusan.png" alt="BORUSAN" className="max-h-12 object-contain" />
+                        </div>
+                    </div>
+
+                    {/* İstanbul Bilgi Üniversitesi */}
+                    <div className="flex flex-col gap-6">
+                        <div className="bg-white shadow-md rounded-lg items-center justify-center p-4 w-40 h-24">
+                            <img src="/img/istanbul.png" alt="İstanbul Bilgi Üniversitesi" className="max-h-12 object-contain" />
+                        </div>
+
+                        {/* BookMyShow */}
+                        <div className="bg-white shadow-md rounded-lg flex items-center justify-center p-4 w-40 h-24">
+                            <img src="/img/book my show.png" alt="bookmyshow" className="max-h-12 object-contain" />
+                        </div>
+                    </div>
+
+                    {/* AKBANK */}
+                    <div className="flex flex-col gap-6">
+                        <div className="bg-white shadow-md rounded-lg flex items-center justify-center p-4 w-40 h-24">
+                            <img src="/img/akbank.png" alt="AKBANK" className="max-h-12 object-contain" />
+                        </div>
+
+                        {/* aktaş */}
+                        <div className="bg-white shadow-md rounded-lg flex items-center justify-center p-4 w-40 h-24">
+                            <img src="/img/akcan.png" alt="aktaş" className="max-h-12 object-contain" />
+                        </div>
+
+                        {/* Tümünü Gör -> */}
+                        <div className="bg-white shadow-md rounded-lg flex items-center justify-center p-4 w-40 h-24">
+                            <img src="/img/amazon.png" alt="Tümünü Gör ->" className="max-h-12 object-contain" />
+                        </div>
+                    </div>
+
+                    {/* AKÇANSA */}
+                    <div className="flex flex-col gap-6">
+                        <div className="bg-white shadow-md rounded-lg flex items-center justify-center p-4 w-40 h-24">
+                            <img src="/img/aktas.png" alt="AKÇANSA" className="max-h-12 object-contain" />
+                        </div>
+
+                        {/* OLA */}
+                        <div className="bg-white shadow-md rounded-lg flex items-center justify-center p-4 w-40 h-24">
+                            <img src="/img/ola.png" alt="OLA" className="max-h-12 object-contain" />
+                        </div>
+                    </div>
+
+                    {/* amazon */}
+                    <div>
+                        <div className="bg-white shadow-md rounded-lg flex items-center justify-center p-4 w-40 h-24">
+                            <img src="/img/amazon.png" alt="Tümünü Gör->" className="max-h-12 object-contain" />
+                        </div>
+                    </div>
 
                 </div>
             </section>
-            <section className="contact-section">
-                <div className="icon-wrapper">
-                    <div><LuUsers /></div>
-                    <div className="circle filled"></div>
+
+            <section className="text-center py-12">
+                {/* Icon with circle behind */}
+                <div className="flex justify-center mb-6 relative">
+                    <LuUsers className="h-16 w-16 text-black relative z-10" />
+                    <div className="absolute top-0 right-[47%] h-10 w-10 rounded-full bg-red-400 -z-0"></div>
                 </div>
-                
-                <h2 className="contact-title">Bize Ulaşın</h2>
-                <p className="contact-description">
+
+                <h2 className="text-2xl font-bold text-gray-900">Bize Ulaşın</h2>
+                <p className="mt-2 text-gray-600 max-w-10px mx-10px">
                     Çözüm, hizmet ve ürünlerimiz hakkında detaylı bilgi için bizimle irtibata geçin.
                 </p>
 
-                <button className="contact-button">Bize Ulaşın</button>
+                <button className="mt-6 px-6 py-3 bg-red-500 text-white rounded-md shadow-md hover:bg-red-600 transition">
+                    Bize Ulaşın
+                </button>
             </section>
             <footer className="footer">
                 <div className="footer-columns">
@@ -275,19 +277,17 @@ const Bilgi = () => {
                     </div>
                 </div>
 
-                <div className="footer-bottom">
-                    <p>© Copyright 2010-2021 - Can Çevik</p>
-                   <div className="footericon">
-                     <TiSocialFlickr />
-                    <CiLinkedin />
-                    <FiTwitter />
-                    <FaInstagram />
-                    <CiFacebook />
+                <div className="flex flex-col md:flex-row justify-between items-center mt-10 border-gray-700 pt-6 px-4 md:px-30">
+                    <p className="text-sm">© Copyright 2010-2021 - Can Çevik</p>
+                    <div className="flex space-x-4 mt-4 md:mt-0">
+                        <TiSocialFlickr />
+                        <CiLinkedin />
+                        <FiTwitter />
+                        <FaInstagram />
+                        <CiFacebook />
                     </div>
-
                 </div>
             </footer>
-
         </>
     );
 };
