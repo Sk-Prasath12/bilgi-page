@@ -106,6 +106,7 @@ const items = [
 
 
     
+    
 
     <div className="font-sans">
       {/* Hero Section with Background */}
@@ -303,6 +304,7 @@ const items = [
         </div>
       </div>
     </section>
+
 <section className="references py-10 px-4 sm:px-6 lg:px-12">
                 <div className="text-center mb-6">
                     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
@@ -313,7 +315,7 @@ const items = [
                     </p>
                 </div>
 
-                <div className="flex flex-wrap justify-center gap-4 py-10">
+                <div className="flex flex-wrap justify-center gap-6 py-10">
                     {/* BORUSAN */}
                     <div className="bg-white shadow rounded flex items-center justify-center p-2 sm:p-3 w-28 h-20 sm:w-[10rem] sm:h-20 mt-10">
                         <img
@@ -396,6 +398,7 @@ const items = [
                     </div>
                 </div>
             </section>
+
 
 
 
